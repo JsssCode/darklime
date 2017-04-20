@@ -1,0 +1,32 @@
+<div class="row skills_container" id="skills">
+  <div class="col-sm-12 col-md-8 col-lg-8 mx-auto">
+    <div class="row skills">
+
+      <h2>Skills</h2>
+    </div>
+
+    <div *ngFor="let skill of skills">
+      <div class="row skill_perc_row">
+        <div class="col-sm-4 col-md-4 col-xl-3">
+        </div>
+        <div class="col-sm-8 col-md-8 col-xl-9  text-right">
+          <div [style.paddingRight]="skill.padding">
+            {{skill.percent}}%
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row skill_row">
+        <div class="col-sm-4 col-md-4 col-xl-3">
+          <div class="skill_name">{{skill.skill}}</div>
+        </div>
+        <div class="col-sm-8 col-md-8 col-xl-9">
+          <hr class="progress_line_back" />
+          <hr [style.width]="skill.width" class="progress_line" />
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

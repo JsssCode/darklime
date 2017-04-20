@@ -1,0 +1,54 @@
+$lime-color: #a3cd39
+$dark-color: #222
+$a-tags-hover: 'a:active, a:hover';
+
+
+/* You can add global styles to this file, and also import other style files */
+@import "reset" 
+
+html, body 
+    height: 100%
+body
+    height: 100%
+    padding-top: 50px /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: 'Open Sans', serif
+    font-weight: 300
+    letter-spacing: 0.05em
+    background-color: #000
+
+h2
+    margin: auto
+    font-size: 40pt
+    padding-top: 40px
+    padding-bottom: 40px
+    color: white
+    text-transform: uppercase
+
+h3
+    margin: auto
+    font-size: 20pt
+    padding-top: 50px
+    padding-bottom: 20px
+    color: white
+    text-align: center
+    
+
+a, p, div
+    color: white
+
+.contactform hr, .ourteam hr, .statistics hr 
+    height: 1px
+    width: 30%
+    margin: auto
+    border-style: none
+    background-color: #a3cd39
+
+
+.navbar-inverse 
+    background-color: #000 
+    .navbar-nav 
+        .nav-link.active
+             color: $lime-color
+
+.modal-dialog-limestyle
+    color: $lime-color

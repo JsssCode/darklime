@@ -1,0 +1,57 @@
+<div class="row" id="portfolio">
+  <div class="col">
+    <div class="portfolio-nav-overline" >
+      <div class="nav-portfolio-line0">
+        <hr />
+      </div>
+      <div class="nav-portfolio-line1" [ngClass]="{'darkcol': isLineDark[1], 'limecol': isLineLime[1]}">
+        <hr />
+      </div>
+      <div class="nav-portfolio-line2" [ngClass]="{'darkcol': isLineDark[2], 'limecol': isLineLime[2]}">
+        <hr />
+      </div>
+      <div class="nav-portfolio-line3" [ngClass]="{'darkcol': isLineDark[3], 'limecol': isLineLime[3]}">
+        <hr />
+      </div>
+      <div class="nav-portfolio-line4" [ngClass]="{'darkcol': isLineDark[4], 'limecol': isLineLime[4]}">
+        <hr />
+      </div>
+      <div class="nav-portfolio-line5" [ngClass]="{'darkcol': isLineDark[5], 'limecol': isLineLime[5]}">
+        <hr />
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <nav class="navbar navbar-toggleable-md navbar-inverse">
+      <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarNavPortf" aria-controls="navbarNavPortf"
+        aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavPortf">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': currentcategory==='all_projects'}" (click)="ShowFirstLine('all_projects')">
+              <h1>All Projects</h1>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': currentcategory==='catalogs'}"  (click)="ShowFirstLine('catalogs')">Catalogs/Brochures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': currentcategory==='flyers'}"  (click)="ShowFirstLine('flyers')">Flyers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': currentcategory==='infographics'}"  (click)="ShowFirstLine('infographics')">Infographics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [ngClass]="{'active': currentcategory==='web'}"  (click)="ShowFirstLine('web')">Web</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+<app-portfolio [category] = 'currentcategory'></app-portfolio>
