@@ -3,6 +3,7 @@
 # compiled output
 /dist
 /tmp
+/src
 
 # dependencies
 /node_modules
@@ -41,4 +42,3 @@ Thumbs.db
 
 # my own files
 bad_code_fix
-/src
