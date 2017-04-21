@@ -43,4 +43,5 @@ Thumbs.db
 bad_code_fix
 /src/assets/images
 /src/app/app.module.ts
+/src/app/app.module.ts
 *.png

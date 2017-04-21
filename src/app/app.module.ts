@@ -27,7 +27,7 @@ import { AngularFireModule, AuthProviders, AuthMethods  } from 'angularfire2';
 
 // Must export the config
 export const firebaseConfig = {
-    apiKey: "",
+    apiKey: "AIzaSyASf42ITk-oXNTkEWshRF5f0AoNtkqg8Ls",
     authDomain: "darklime-99e0c.firebaseapp.com",
     databaseURL: "https://darklime-99e0c.firebaseio.com",
     storageBucket: "darklime-99e0c.appspot.com",
