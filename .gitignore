@@ -42,3 +42,4 @@ Thumbs.db
 # my own files
 bad_code_fix
 /src/app/app.module.ts
+/src/assets/images/*
