@@ -10,7 +10,7 @@
 </div>
 
 
-<nav class="navbar navbar-inverse">
+<!--nav class="navbar navbar-inverse">
     <ul class="nav navbar-nav navbar-center">
         <li class="nav-item active">
             <a class="nav-link" (click)="viewMore()">View more
@@ -19,8 +19,16 @@
                 <span class="sr-only">(current)</span></a>
         </li>
     </ul>
-    <!-- /.navbar-collapse -->
-</nav>
+</nav-->
+
+<div class="viewmore">
+    <a (click)="viewMore()">
+        <p>View more</p>
+        <img src="./assets/images/shapeViewMore.png"/>
+    </a>
+
+</div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="modalPortfolio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
